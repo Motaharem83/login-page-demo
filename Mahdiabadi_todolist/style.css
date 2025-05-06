@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+
+}
+body {  
+    width: 100%;  
+    min-height: 100vh;  
+    background: linear-gradient(180deg, #1e3a8a 0%, #60a5fa 100%);
+    /*background: linear-gradient(135deg, #4facfe 0%, #00f2c0 100%);*/
+    background-blend-mode: overlay;   
+    background-size: cover;
+    padding: 20px;  
+    color: #333;  
+    animation: bodyFadeIn 1s ease;  
+}  
+
+@keyframes bodyFadeIn {  
+    from { opacity: 0; }  
+    to { opacity: 1; }  
+}  
+
+.container {  
+    width: 100%;  
+    max-width: 540px;  
+    background: #fff;  
+    border-radius: 20px;  
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);   
+    padding: 20px;   
+    animation: fadeIn 0.5s ease;   
+}  
+@keyframes fadeIn {  
+    from {  
+        opacity: 0;   
+        transform: translateY(-10px);   
+    }  
+    to {  
+        opacity: 1;  
+        transform: translateY(0);  
+    }  
+}  
+@keyframes textAnimation {  
+    0% {  
+        transform: translateY(20px);  
+        opacity: 0;  
+    }  
+    50% {  
+        transform: translateY(-10px);  
+        opacity: 1;  
+    }  
+    100% {  
+        transform: translateY(0);  
+    }  
+}  
+
+.text1{  
+    font-size: 24px;
+    color: #333;  
+    animation: textAnimation 1s ease forwards;
+}
+.row {  
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
+    background: #edeef0;  
+    border-radius: 25px;   
+    padding: 12px 20px;  
+    margin-bottom: 20px;  
+    transition: background 0.3s ease, transform 0.2s ease;  
+}  
+
+.row:hover {  
+    background-color: #e1e6eb;   
+    transform: scale(1.02); 
+}  
+
+input {  
+    flex: 1;  
+    border: 1px solid #ccc;   
+    border-radius: 20px;  
+    outline: none;  
+    background: #f9f9f9;   
+    padding: 10px;  
+    font-size: 16px;  
+    transition: border-color 0.3s ease, background 0.3s ease;   
+}  
+
+input:focus {  
+    border-color: #007bff; 
+    background: #ffffff;   
+}  
+
+.btn {  
+    background: #007bff;   
+    color: #fff;  
+    border-radius: 25px;  
+    padding: 10px 20px;   
+    font-size: 16px;  
+    border: none;  
+    cursor: pointer;  
+    transition: background 0.3s ease, transform 0.2s ease;  
+    margin-left: 10px;  
+}  
+
+.btn:hover {  
+    background: #0056b3;  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  
+}  
+
+.li {  
+    border-radius: 10px;  
+    margin: 10px 0;  
+    padding: 10px;   
+    transition: background 0.3s ease, transform 0.2s ease;  
+    animation: textFadeIn 0.5s ease;    
+}  
+
+.li:hover {  
+    background: #f1f1f1;   
+    transform: translateX(5px);
+}  
+
+.li2 {  
+    background: #fff;   
+    border: 1px solid #ccc;   
+}  
+
+.list {  
+    height: 60vh;  
+    overflow-y: auto;  
+    background: #f9f9f9;  
+    border-radius: 10px;  
+    padding: 10px;  
+    color: #444;  
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);  
+    animation: fadeIn 0.5s ease;
+}
